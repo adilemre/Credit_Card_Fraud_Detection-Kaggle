@@ -28,7 +28,7 @@ The findings of the exploratory data analysis step:
 - Time feature contains 2 following days data. 
   - When I checked the minimum and maximum values of this feature, they were 0 and 172k. And then I divided the max value to 60 and converted it to minutes. Then I divided the result to 60 one more time and converted it to hours and found 48. Time values were not directly useful for this study. I converted seconds data to hours by thinking that a transaction early in the morning or late at night might be a sign of fraud. 
   - The histogram plot of this feature supports this idea.
- !!!!!Histogram chart
+ ![](images/Graph_1_Time_histogram.png)
   - With the thought of transaction hours might be correlated, I converted this time data to hourly data(eg. 16:00,17:00) and added it to the dataset.
 - Anonymous features, v1-v28, all have extreme values.
   - The descriptive statistics of those features had too low or too high min and max values. And when I compared min and max values of each feature with the first and last quartile values, there was an obvious spike that stands between.
@@ -48,7 +48,7 @@ When I compared models metrics and datasets with each other:
 - The highest precision score ,%84 came from logistic regression and dataset-4 combination. If I specify extreme values, modify them on my dataset and mark them with flag features at the beginning, I am able to find a predictive model with the highest precision score. On the other hand the recall score was %62.
 - The highest recall score,%78 was from decision tree and dataset-2. In this dataset, I only marked extreme values with flag features but I didn’t modify them. With this dataset and classifier combination, I got the precision score %80. 
 - The dataset-3 had the worst results. Removing extreme values had a negative impact on predictive modelling. The variance between fraud and non-fraud cases were lost. 
-!!!  graph -2 !!!
+![](images/Graph_3_Classifiers_precision_recall_score.png)
 
 In this study, I worked on the credit card transaction dataset to build a predictor for fraud case specification.
 
