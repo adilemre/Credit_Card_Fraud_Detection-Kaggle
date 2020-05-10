@@ -44,7 +44,9 @@ I used the grid search cv in the sklearn library and found relatively best param
 
 After running the grid search cv algorithm on 4 different datasets, I found best parameter sets for logistic regression and decision tree classifiers and reached the precision and recall score combinations as below.
 
-!!!!Table !!!!
+
+![](images/Graph_2_Precision_recall_table.png)
+
 
 When I compared models metrics and datasets with each other:
 - The highest precision score ,%84 came from logistic regression and dataset-4 combination. If I specify extreme values, modify them on my dataset and mark them with flag features at the beginning, I am able to find a predictive model with the highest precision score. On the other hand the recall score was %62.
