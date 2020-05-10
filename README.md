@@ -39,7 +39,9 @@ The findings of the exploratory data analysis step:
     - Dataset-4: Extreme values were replaced and flagged.
 
 After the explanatory data step and prepared 4 dataset, I started the predictive modelling step. I chose to work with 2 algorithms, logistic regression and decision tree. My plans were to run those algorithms on 4 datasets, finding good classifiers for each dataset and compare their results with each other. But the goal was not only finding a good classifier and also reviewing the results to understand which extreme value modification technique makes difference ? 
+
 I used the grid search cv in the sklearn library and found relatively best parameters for each dataset and algorithm combinations. As I was running the grid search cv, I chose to use F1 score to find a successful predictive mode. F1 Score is used to find a predictor with the best precision and recall score combination. In studies like fraud, the cases that we would like to predict are usually rare. In our dataset, only %0.2 of transactions were fraud and my goal was to find a predictor to detect that small part of cases correctly. If I chose to use accuracy for model success metric then the grid search cv method would combine parameters to find a model, which may predict all cases as non-fraud. Because accuracy metric presents the percentage of correct predictions. If a model predicts all cases in our dataset as non-fraud then the accuracy score will be %99,8, which is quite impressive. However the model can not divide the observations as fraud or non-fraud.
+
 After running the grid search cv algorithm on 4 different datasets, I found best parameter sets for logistic regression and decision tree classifiers and reached the precision and recall score combinations as below.
 
 !!!!Table !!!!
