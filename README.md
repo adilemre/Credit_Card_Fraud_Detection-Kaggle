@@ -1,4 +1,4 @@
-# Credit_Card_Fraud_Detection-Kaggle
+# Credit Card Fraud Detection-Kaggle
 
 In this analysis, I worked the credit card transaction dataset to create a classifier to detect fraud cases.
 
